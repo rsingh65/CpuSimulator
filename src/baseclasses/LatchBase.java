@@ -19,6 +19,14 @@ import voidtypes.VoidInstruction;
 public class LatchBase {
     private boolean invalid = false;
     private InstructionBase ins = VoidInstruction.getVoidInstruction();
+    static String FtchDst;
+    char FtchSrc1;
+    char FtchSrc2;
+    
+    static String DcdDst,DcdSrc1,DcdSrc2;
+    char ExecDst,ExecSrc1,ExecSr2;
+    char MemDst,MemSrc1,MemSrc2;
+    char WrtDst,WrtSrc1,WrtSrc2;
     
     /**
      * Invalidate the contents of this latch.  This is for passing bubbles
